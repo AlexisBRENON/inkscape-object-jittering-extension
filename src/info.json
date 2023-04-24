@@ -1,0 +1,15 @@
+{
+    "id": "com.github.AlexisBRENON.inkscape-objit-extension",
+    "author": "Alexis BRENON",
+    "name": "Objit",
+    "licence": "MIT",
+    "summary": "Jitter objects pseudo-randomly",
+    "files": [
+        "com.github.AlexisBRENON.inkscape-objit-extension/objit/",
+        "com.github.AlexisBRENON.inkscape-objit-extension/objit/LICENSE",
+        "com.github.AlexisBRENON.inkscape-objit-extension/objit/README.md",
+        "com.github.AlexisBRENON.inkscape-objit-extension/objit/objit.inx",
+        "com.github.AlexisBRENON.inkscape-objit-extension/objit/objit.py",
+        "com.github.AlexisBRENON.inkscape-objit-extension/objit/constructors.py"
+    ]
+}

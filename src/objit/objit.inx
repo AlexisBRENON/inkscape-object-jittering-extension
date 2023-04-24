@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+
+    <name>Object Jitter</name>
+    <id>com.github.AlexisBRENON.inkscape-objit-extension</id>
+
+    <param name="objit" type="notebook">
+        <page name="page_settings" gui-text="Settings">
+            <param name="constructor" type="optiongroup" appearance="radio" gui-text="Distribution:">
+                <option value="correlation">Random</option>
+                <option value="additive_recurrence">Additive recurrence</option>
+                <option value="additive_recurrence2">Recurrent additive recurrence</option>
+                <option value="vdc">van der Corput sequence</option>
+                <option value="sobol">Sobol’ sequence</option>
+                <option value="poisson_disk_sampling">Poisson disk sampling</option>
+            </param>
+        </page>
+
+        <page name="page_about" gui-text="About">
+            <label>
+                Object Jitter
+                Jitter selected objects pseudo-randomly.
+            </label>
+            <label appearance="url">https://en.wikipedia.org/wiki/Low-discrepancy_sequence</label>
+            <label appearance="url">https://github.com/AlexisBRENON</label>
+        </page>
+    </param>
+
+    <effect needs-document="true" needs-live-preview="false">
+        <effects-menu hidden="false">
+            <submenu name="Arrange" />
+        </effects-menu>
+        <menu-tip>Jitter objects pseudo-randomly.</menu-tip>
+    </effect>
+
+    <script>
+        <command location="inx" interpreter="python">objit.py</command>
+    </script>
+
+</inkscape-extension>
